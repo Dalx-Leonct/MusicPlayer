@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+    //Metodo para repetir, primero entra al else, ya que repeat es =2, luego se cambia a 0 y entra al if
     public void repeat(View view) {
         if (repeat == 0){
             btn_repeat.setBackgroundResource(R.drawable.no_repetir);
@@ -80,9 +80,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Metodo para avanzar de cancion itera por la posicion y el tope es el largo del arreglo -1 para que no se salga del largo del arreglo ya que parte en 0
+    
     public void next(View view) {
         if (position < mp_array.length -1){
-
+      
+     //Si esta sonando entra al if, sino cambia solamente el background, ya que esta en stop
             if (mp_array[position].isPlaying()){
                 mp_array[position].stop();
                 position++;
@@ -100,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    
+    /*metodo para retroceder, en este caso se va descontando una posicion, ya que va hacia atras. Este metodo perdia la referencia de la cancion
+    por lo que se tuvo q llamar al metodo assignPlaylist
+    */
     public void previous(View view) {
 
         if (position >=1){
