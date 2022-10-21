@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="play_pause">Play pause</string>
+    <string name="stop">Parar</string>
+    <string name="repeat">Repetir</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="portada">Anterior</string>
+    <string name="imageView">Imagen de fondo</string>
+
+</resources>
