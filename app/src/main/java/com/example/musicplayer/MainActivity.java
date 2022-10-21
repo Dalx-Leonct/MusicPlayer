@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv;
     int repeat = 2, position = 0;//variables para repetir y para ver el indice del vector del media player
 
-    MediaPlayer mp_array[] = new MediaPlayer[3];
+    MediaPlayer mp_array[] = new MediaPlayer[5];
 //    mp_array[].stop()
 //    mp_array[].setLooping(true)
 //    mp_array[].start()
@@ -127,8 +127,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void assignPlaylist() {
-        mp_array[0] = MediaPlayer.create(this, R.raw.race);
-        mp_array[1] = MediaPlayer.create(this, R.raw.sound);
-        mp_array[2] = MediaPlayer.create(this, R.raw.tea);
+        mp_array[0] = MediaPlayer.create(this, R.raw.bunny);
+        mp_array[1] = MediaPlayer.create(this, R.raw.quevedo);
+        mp_array[2] = MediaPlayer.create(this, R.raw.race);
+        mp_array[3] = MediaPlayer.create(this, R.raw.sound);
+        mp_array[4] = MediaPlayer.create(this, R.raw.tea);
     }
 }
